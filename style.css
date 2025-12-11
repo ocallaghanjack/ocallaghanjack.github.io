@@ -9,7 +9,7 @@
 
 body {
     margin: 0;
-    padding: 2% 5%;
+    padding: 2.2% 5.5%;
     font-family: 'CascadiaCode', monospace;
     color: #000000;
     display: flex;
@@ -232,6 +232,10 @@ h1 {
         padding: 2% 3%;
     }
 
+    h1 {
+        text-align: center;
+    }
+    
     .container {
         padding: 12px;
         margin: 20px 0;
@@ -303,7 +307,8 @@ h1 {
     }
 
     .nav-inline li {
-        width: 100%;
+        width: 80%;
+        justify-content: center;
     }
 
     .nav-inline li a {
