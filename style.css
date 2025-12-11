@@ -8,7 +8,6 @@ body {
     padding-left: 5%;
     padding-right: 5%;
     font-family: 'CascadiaCode', monospace;
-    
     color: #000000;
     display: flex;
     justify-content: center;
@@ -26,6 +25,8 @@ h1 {
     margin: 0px;
     padding: 0px;
     color: #000000;
+    min-width: 405px;
+    width: 100%;
 }
 
 .nav-bar {
@@ -60,34 +61,8 @@ h1 {
     color: #ffffff;
 }
 
-.about {
-    display: flex;
-    margin: 0px;
-}
-
-.column-left,
-.column-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 1.8%;
-}
-
-.column-left { flex: 65%; }
-.column-right { 
-    flex: 35%;
- }
-
- .column-right img {
-    border: 5px solid black;
- }
- 
-.headshot {
-    object-fit: cover;
-    border-radius: 8px;
-    width: 95%;
-    height: auto;
+.section-title {
+    padding: 0px;
 }
 
 .nav-links li a {
@@ -108,16 +83,10 @@ h1 {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
-    padding: 0;
+    padding: 0px;
     margin: 40px;
     transition: 0.5s;
     justify-content: center;
-    border-radius: 8px;
-    border: 5px solid black;
-}
-
-.container h1 {
-    padding: 15px;
 }
 
 .card-container {
@@ -165,6 +134,58 @@ h1 {
     width: 100%;
 }
 
+/* About Me Section */
+#about {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+
+    margin: 0;
+    border-radius: 8px;
+    border: 5px solid #4b72ff;
+}
+
+/* Columns */
+#about .column-left {
+    flex: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#about .column-right {
+    flex: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Spacing inside About */
+#about p {
+    margin: 0;
+}
+
+#about a,
+#about a:visited {
+    text-decoration: none;
+    color: #4b72ff;
+}
+
+#about h1 {
+    margin-bottom: 1vw;
+}
+
+/* Headshot */
+.headshot {
+    width: 80%;
+    height: auto;
+    max-width: 280px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #4b72ff;
+    margin: 0;
+}
+
 .card p {
     font-size: 14px;
     margin: 0;
@@ -172,6 +193,7 @@ h1 {
     max-width: 100%;
     text-align: left;
 }
+
 
 .contact-card {
     text-align: center;
