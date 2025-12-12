@@ -1,3 +1,120 @@
-h1 {
-    color: red;
+@font-face {
+    font-family: 'CascadiaCode';
+    src: url('font/static/CascadiaCode-Regular.ttf') format('truetype');
 }
+
+body {
+    display: flex;
+    font-family: 'CascadiaCode', monospace;
+    flex-direction: column;
+    margin: 5% 12%;
+    background: url("images/star_background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-color: #000;
+    display: flex;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* header left, links right */
+    align-items: center; /* vertical centering */
+    padding: 0 20px;
+    height: 60px;
+    border-radius: 8px;
+    border: 3px solid #4b72ff; /* navbar border in primary color */
+    background-color: #f0f0f0;
+}
+
+.main-space {
+    display: flex;
+    flex-direction: row;
+    border: 3px solid #4b72ff;
+    border-radius: 8px;
+    margin: 3% 0 3%;
+    padding: 0 20px;
+    background-color: #f0f0f0;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.left-col, .right-col {
+    display: flex;
+    width: 50%;
+    margin: 3% 0 3%;
+}
+
+/* .left-col {
+    border: 3px solid rgb(255, 128, 0);
+} */
+
+.right-col {
+    margin: 3% 0 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.right-item div {
+    padding: 3% 3%;
+}
+
+img {
+  aspect-ratio: 1 / 1; 
+  object-fit: cover; 
+  object-position: center; 
+  overflow: hidden; 
+  border-radius: 8px;
+  border: 3px solid #4b72ff;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* header left, links right */
+    align-items: center; /* vertical centering */
+    padding: 0 20px;
+    height: auto;
+    border: 3px solid blue; /* navbar border in primary color */
+    background-color: #f0f0f0;
+}
+
+.nav-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* border: 3px solid red; */
+    padding: 5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px; /* space between links */
+    /* border: 3px solid yellow; */
+    padding: 5px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    /* border: 2px solid green;  */
+    padding: 2px 5px;
+    border: 3px solid #4b72ff;
+    border-radius: 8px;
+    padding: 0.1rem 0.5rem;
+}
+
+.skill {
+    color: #000000;
+    border: 3px solid #4b72ff; /* each link has a border (optional for visualization) */
+    padding: 2px 5px;
+    border-radius: 8px;
+    text-align: center;
+    width: 2rem;
+    font-size: 10px;
+}
+
+#skill-container {
+}
+
